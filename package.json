@@ -1,7 +1,7 @@
 {
-  "name": "react-native-multithreading",
+  "name": "react-native-multithreading-internal",
   "version": "1.1.1",
-  "description": "🧵 Fast and easy multithreading for React Native using JSI",
+  "description": "🧵 Fast and easy multithreading for React Native using JSI (Internal version)",
   "main": "src/index.ts",
   "files": [
     "src",
@@ -25,7 +25,7 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/mrousavy/react-native-multithreading",
+  "repository": "https://github.com/herksaw/react-native-multithreading-internal",
   "author": "Marc Rousavy <marcrousavy@hotmail.com> (https://github.com/mrousavy)",
   "license": "MIT",
   "bugs": {

@@ -75,6 +75,11 @@ def getExtOrDefault(name, defaultValue) {
 }
 
 android {
+  compileOptions {
+      sourceCompatibility JavaVersion.VERSION_1_8
+      targetCompatibility JavaVersion.VERSION_1_8
+  }
+
   compileSdkVersion getExtOrDefault('compileSdkVersion', 28) 
   defaultConfig {
     minSdkVersion getExtOrDefault('minSdkVersion', 16)
