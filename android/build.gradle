@@ -38,6 +38,10 @@ def resolveReactNativeDirectory() {
     return new File(['node', '--print', "path.dirname(require.resolve('react-native/package.json'))"].execute(null, rootDir).text.trim())
 }
 
+if (isNewArchitectureEnabled()) {
+  apply plugin: "com.facebook.react"
+}
+
 // third-party-ndk deps headers
 // mostly a copy of https://github.com/software-mansion/react-native-reanimated/blob/master/android/build.gradle#L115
 
