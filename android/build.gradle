@@ -30,6 +30,10 @@ def reactNativeVersion = json.version as String
 def (major, minor, patchhh) = reactNativeVersion.tokenize('.')
 def rnMinorVersion = minor.toInteger();
 
+def isNewArchitectureEnabled() {
+  return rootProject.hasProperty("newArchEnabled") && rootProject.getProperty("newArchEnabled") == "true"
+}
+
 def resolveReactNativeDirectory() {
     return new File(['node', '--print', "path.dirname(require.resolve('react-native/package.json'))"].execute(null, rootDir).text.trim())
 }
